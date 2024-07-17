@@ -1,15 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Miama", sans-serif;
   color: white;
   background-color: black;
 }
 
 /* shared style  */
-.navbar {
+.nav-banner {
   max-width: 1160px;
   margin: 0 auto;
+}
+.join-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  padding: 16px 40px;
+  border: none;
 }
 
 /* navbar style  */
@@ -21,11 +31,13 @@ body {
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 100%
   );
+  margin-bottom: 100px;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
 }
 .logo-name {
   font-size: 2.25rem;
@@ -49,4 +61,96 @@ body {
   padding: 8px 20px;
   border-radius: 46px;
   background: rgb(230, 83, 60);
+}
+
+/* banner style  */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.banner-text {
+  max-width: 520px;
+}
+.banner-title {
+  font-size: 4.875rem;
+  font-weight: 900;
+  line-height: 89px;
+  margin: 64px 0 0 0;
+}
+.title-shape {
+  font-family: "Miama";
+  font-weight: 500;
+  font-size: 9rem;
+  letter-spacing: 4px;
+}
+.banner-details {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.download-app-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border-radius: 42px;
+  background: black;
+  padding: 16px 40px;
+  border: 1px solid rgb(255, 255, 255);
+  margin-left: 14px;
+}
+.banner-box-img {
+  position: relative;
+}
+.banner-img {
+  width: 100%;
+}
+.free-video {
+  position: absolute;
+  width: 130px;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  top: 22%;
+  left: 65%;
+}
+.free-video h4 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+.free-video p {
+  font-size: 13px;
+  margin: 0;
+}
+.free-tutorial {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  width: 153px;
+  padding: 1.25rem 1.43rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  top: 73%;
+  left: -30%;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(230, 83, 60);
+}
+.free-tutorial h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.free-tutorial p {
+  color: rgba(239, 237, 232, 0.65);
+  margin: 0;
 }
