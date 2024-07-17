@@ -8,18 +8,26 @@ body {
 }
 
 /* shared style  */
-.nav-banner {
-  max-width: 1160px;
+.navbar,
+.banner,
+main {
+  max-width: 80%;
   margin: 0 auto;
 }
 .join-btn {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   color: white;
   border-radius: 42px;
   background: rgb(230, 83, 60);
-  padding: 16px 40px;
+  padding: 1rem 2.5rem;
   border: none;
+}
+.common-p {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
 }
 
 /* navbar style  */
@@ -153,4 +161,37 @@ body {
 .free-tutorial p {
   color: rgba(239, 237, 232, 0.65);
   margin: 0;
+}
+
+/* Change Your Habits style  */
+.change-habits-text {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.change-habits-title {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 0 14px 0;
+}
+.habits-details {
+  margin-bottom: 58px;
+  line-height: 24px;
+}
+.change-habits-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 20px;
+  gap: 40px;
+  text-align: center;
+}
+.habits-box img {
+  width: 70%;
+  border-radius: 50%;
+  border: 5px solid rgb(40, 38, 38);
+}
+.habits-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 6px 0;
 }
