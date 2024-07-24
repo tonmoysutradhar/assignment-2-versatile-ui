@@ -23,7 +23,13 @@ main {
   padding: 1rem 2.5rem;
   border: none;
 }
-.common-p {
+.main-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  margin: 0;
+}
+.main-para {
   font-size: 14px;
   line-height: 18px;
   color: rgba(255, 255, 255, 0.5);
@@ -172,8 +178,6 @@ main {
   text-align: center;
 }
 .change-habits-title {
-  font-size: 48px;
-  font-weight: 900;
   margin: 0 0 14px 0;
 }
 .habits-details {
@@ -201,14 +205,27 @@ main {
 /* Run an Extra Mile Easily  */
 .extra-mile {
   display: flex;
-  border: 2px solid red;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(34, 34, 34);
+  border-radius: 18px;
+  padding: 1.875rem 2rem 1.875rem 3.375rem;
   margin: 100px 0;
 }
-
-
-.extra-mile-img {
-  /* width: 100%; */
+.extra-mile-text {
+  max-width: 440px;
+  margin-right: 10px;
 }
-.extra-mile-img img {
-  width: 100%;
+.change-para {
+  line-height: 24px;
+  margin: 14px 0 34px 0;
+}
+.extra-mile-img {
+  min-width: 430px;
+  height: 366px;
+  background: url("../images/run.jpg");
+  border-radius: 18px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: -730px -205px;
 }
