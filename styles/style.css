@@ -133,6 +133,7 @@ main {
 .free-video p {
   font-size: 13px;
   margin: 0;
+  margin-top: 5px;
 }
 .free-tutorial {
   display: flex;
@@ -145,7 +146,7 @@ main {
   border-radius: 12px;
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
-  top: 71%;
+  top: 72.5%;
   left: -31%;
 }
 .ball {
@@ -161,6 +162,7 @@ main {
 .free-tutorial p {
   color: rgba(239, 237, 232, 0.65);
   margin: 0;
+  margin-top: 8px;
 }
 
 /* Change Your Habits style  */
