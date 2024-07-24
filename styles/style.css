@@ -122,7 +122,7 @@ main {
   border-radius: 12px;
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
-  top: 22%;
+  top: 20%;
   left: 65%;
 }
 .free-video h4 {
@@ -145,8 +145,8 @@ main {
   border-radius: 12px;
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
-  top: 73%;
-  left: -30%;
+  top: 71%;
+  left: -31%;
 }
 .ball {
   width: 40px;
@@ -194,4 +194,19 @@ main {
   font-size: 18px;
   font-weight: 600;
   margin: 30px 0 6px 0;
+}
+
+/* Run an Extra Mile Easily  */
+.extra-mile {
+  display: flex;
+  border: 2px solid red;
+  margin: 100px 0;
+}
+
+
+.extra-mile-img {
+  /* width: 100%; */
+}
+.extra-mile-img img {
+  width: 100%;
 }
