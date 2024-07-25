@@ -11,6 +11,7 @@ body {
 .navbar,
 .banner,
 .part-1,
+.part-3,
 .bmi-chart {
   max-width: 80%;
   margin: 0 auto;
@@ -349,39 +350,41 @@ body {
 table {
   margin-top: 55px;
 }
- table, td ,th {
+table,
+td,
+th {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-collapse: collapse;
-  padding: 1.2rem 2rem ;
- }
- th {
+  padding: 1.2rem 2rem;
+}
+th {
   font-weight: 500;
   text-align: left;
- }
- td {
+}
+td {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
- }
- .calculate-your-bmi {
+}
+.calculate-your-bmi {
   max-width: 577px;
- }
- .calculate-your-bmi p{
+}
+.calculate-your-bmi p {
   line-height: 24px;
   margin: 14px 0 34px 0;
- }
+}
 
- .calculate-bmi {
+.calculate-bmi {
   display: grid;
   gap: 12px;
- }
- .bmi-input {
+}
+.bmi-input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
- }
- .bmi-activity {
+}
+.bmi-activity {
   display: grid;
-  grid-template-columns: 1fr;;
+  grid-template-columns: 1fr;
 }
 .bmi-input input,
 .bmi-input select,
@@ -396,4 +399,95 @@ table {
 .btn-calculate {
   margin-top: 34px;
   padding: 1rem 4.5rem;
+}
+
+/* Meet Our Team */
+.meet-our-team {
+  margin: 88px 0;
+}
+.title-container {
+  max-width: 640px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 58px;
+}
+.title-container p {
+  line-height: 24px;
+  margin-top: 14px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  gap: 20px;
+  padding: 20px;
+}
+.team-member-1 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../images/trainer1.png") no-repeat center;
+}
+.team-member-2 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../images/trainer2.png") no-repeat center;
+}
+.team-member-3 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../images/trainer3.png") no-repeat center;
+}
+.team-member-4 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../images/trainer4.png") no-repeat center;
+}
+.team-member-5 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../images/trainer5.png") no-repeat center;
+}
+.team-member-6 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../images/trainer6.png") no-repeat center;
+}
+.team-member {
+  background-size: cover;
+  height: 272px;
+  width: auto;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.team-member h4 {
+  margin: 0;
+  font-size: 24px;
+}
+.team-member p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
 }
