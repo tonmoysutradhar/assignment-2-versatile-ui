@@ -240,12 +240,6 @@ body {
   background-repeat: no-repeat;
   background-position: -730px -205px;
 }
-
-/* Trainings and Exercises  */
-.training-exercise {
-  max-width: 1240px;
-}
-
 .training-text {
   max-width: 600px;
   margin-bottom: 58px;
@@ -605,9 +599,6 @@ hr {
     min-width: 260px;
     height: 340px;
     background-position: -820px -205px;
-  }
-  .training-card {
-    height: 230px;
   }
   .row-1 {
     grid-template-columns: 1fr 1.3fr 1fr;
