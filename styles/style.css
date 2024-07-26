@@ -80,6 +80,10 @@ body {
   border-radius: 46px;
   background: rgb(230, 83, 60);
 }
+.ham-burger,
+.join-mobile {
+  display: none;
+}
 
 /* banner style  */
 .banner {
@@ -144,6 +148,7 @@ body {
 }
 .free-video p {
   font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
   margin: 0;
   margin-top: 5px;
 }
@@ -152,7 +157,6 @@ body {
   align-items: center;
   gap: 12px;
   position: absolute;
-  width: 153px;
   padding: 1.25rem 1.43rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -225,6 +229,9 @@ body {
   line-height: 24px;
   margin: 14px 0 34px 0;
 }
+.extra-mile-btn-img img {
+  display: none;
+}
 .extra-mile-img {
   min-width: 430px;
   height: 366px;
@@ -279,6 +286,10 @@ body {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url("../images/exercise3.png") no-repeat center;
+  display: flex;
+  height: 240px;
+  background-size: cover;
+  align-items: flex-end;
 }
 .training-card-4 {
   background: linear-gradient(
@@ -303,6 +314,10 @@ body {
       rgba(0, 71, 255, 0.3) 100%
     ),
     url("../images/exercise6.jpg") no-repeat center;
+  display: flex;
+  height: 240px;
+  background-size: cover;
+  align-items: flex-end;
 }
 .training-card {
   display: flex;
@@ -545,7 +560,7 @@ hr {
 }
 
 /* Medium Device: 576px to 992 px */
-@media (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .navbar,
   .banner,
   .part-1,
@@ -628,4 +643,174 @@ hr {
   .get-content {
     justify-content: space-around;
   }
+}
+
+/* Small Device: 0px to 576px */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .banner,
+  .part-1,
+  .part-3,
+  .bmi-chart,
+  .footer-section {
+    max-width: 90%;
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  .menu,
+  .join-big-device {
+    display: none;
+  }
+  .ham-burger {
+    display: block;
+    font-size: 2rem;
+  }
+  .banner {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .banner-title {
+    font-size: 2.75rem;
+    line-height: 120%;
+    margin: 14px 0 0 0;
+  }
+  .title-shape {
+    font-size: 5.5rem;
+  }
+  .join-mobile {
+    display: block;
+  }
+  .banner-btn {
+    display: flex;
+  }
+  .join-mobile,
+  .download-app-btn {
+    padding: 1rem 1.5rem;
+  }
+  .banner-box-img {
+    margin: 0 auto;
+  }
+  .free-video {
+    top: 8%;
+    left: 53%;
+    padding: 0.75rem 1.1rem;
+  }
+  .free-video h4 {
+    font-size: 1.9rem;
+  }
+  .free-video p {
+    font-size: 9.8px;
+  }
+  .free-tutorial {
+    top: 45.5%;
+    left: 2%;
+    padding: 0.9rem 1rem;
+  }
+  .free-tutorial h4 {
+    font-size: 1.12rem;
+  }
+  .free-tutorial p {
+    font-size: 0.75rem;
+  }
+  .nav-banner {
+    margin-bottom: 0;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+  .change-habits-box {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.25rem;
+  }
+  .extra-mile {
+    margin: 66px 0;
+    padding: 2.2rem 2rem;
+  }
+  .extra-mile-img {
+    display: none;
+  }
+  .change-para {
+    margin-bottom: 24px;
+  }
+  .extra-mile-btn-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .extra-mile-btn-img img {
+    width: 100%;
+    border-radius: 18px;
+  }
+  .extra-mile-btn-img img {
+    display: block;
+  }
+  .training-text {
+    margin-bottom: 2.25rem;
+  }
+  .row-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .row-2 {
+    grid-template-columns: 1fr 1.25fr;
+  }
+  .training-card-3,
+  .training-card-6 {
+    display: none;
+  }
+  .training-card {
+    height: 180px;
+  }
+  .training-card-2 {
+    background-position-x: -100px;
+  }
+  .training-card-4 {
+    background-position-x: -60px;
+  }
+  .bmi-calculator {
+    margin: 2rem 0;
+  }
+  .bmi-chart {
+    flex-direction: column;
+    padding: 2rem 0 2.6rem 0;
+    gap: 2.6rem;
+  }
+  .bmi-title {
+    font-size: 1rem;
+  }
+  table {
+    margin-top: 1.6rem;
+  }
+  table,
+  td,
+  th {
+    padding: 1rem 1.25rem;
+  }
+
+  /* hhhhhhhhhhhhhhhhh */
+  .bmi-input {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* hjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+  .meet-our-team {
+    margin: 4rem 0;
+  }
+  .title-container {
+    margin-bottom: 2.25rem;
+  }
+  .team-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-section {
+  padding: 44px 0 35px 0;
+}
+.footer-container {
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.get-content {
+  flex-direction: column;
+  gap: 20px;
+}
 }
