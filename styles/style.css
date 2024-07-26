@@ -5,6 +5,7 @@ body {
   font-family: "Inter", "Miama", sans-serif;
   color: white;
   background-color: black;
+  margin: 0;
 }
 
 /* shared style  */
@@ -42,7 +43,6 @@ body {
 /* navbar style  */
 .nav-banner {
   width: 100%;
-  height: 715px;
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
@@ -122,7 +122,9 @@ body {
   position: relative;
 }
 .banner-img {
-  width: 100%;
+  /* width: 100%; */
+  width: 349px;
+  height: 580px;
 }
 .free-video {
   position: absolute;
@@ -218,7 +220,6 @@ body {
 }
 .extra-mile-text {
   max-width: 440px;
-  margin-right: 10px;
 }
 .change-para {
   line-height: 24px;
@@ -230,7 +231,6 @@ body {
   background: url("../images/run.jpg");
   border-radius: 18px;
   background-repeat: no-repeat;
-  /* background-origin: content-box; */
   background-position: -730px -205px;
 }
 
@@ -343,6 +343,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
+  gap: 20px;
 }
 .bmi-title {
   font-size: 28px;
@@ -541,4 +542,90 @@ hr {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.25rem;
   margin: 36px 0 0 0;
+}
+
+/* Medium Device: 576px to 992 px */
+@media (min-width: 576px) and (max-width: 992px) {
+  .navbar,
+  .banner,
+  .part-1,
+  .part-3,
+  .bmi-chart,
+  .footer-section {
+    max-width: 90%;
+  }
+  .banner {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .banner-title {
+    margin-top: 20px;
+  }
+  .menu ul {
+    gap: 1rem;
+  }
+  .banner-box-img {
+    margin: 0 auto;
+  }
+  .free-video {
+    top: 10%;
+    left: 54%;
+  }
+  .free-tutorial {
+    top: 61%;
+    left: -45px;
+  }
+  .change-habits-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .run-title {
+    font-size: 36px;
+  }
+  .extra-mile {
+    gap: 30px;
+    margin: 84px 0 72px 0;
+  }
+  .extra-mile-img {
+    min-width: 260px;
+    height: 340px;
+    background-position: -820px -205px;
+  }
+  .training-card {
+    height: 230px;
+  }
+  .row-1 {
+    grid-template-columns: 1fr 1.3fr 1fr;
+  }
+  .row-2 {
+    grid-template-columns: 1.35fr 1fr 1fr;
+  }
+  .training-card-2 {
+    background-position-x: -105px;
+  }
+  .bmi-calculator {
+    margin: 66px 0 46px 0;
+  }
+  table {
+    margin-top: 45px;
+  }
+  .bmi-chart {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .calculate-your-bmi {
+    max-width: 100%;
+  }
+  .meet-our-team {
+    margin: 72px 0;
+  }
+  .team-member h4 {
+    font-size: 20px;
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100px;
+  }
+  .get-content {
+    justify-content: space-around;
+  }
 }
