@@ -413,6 +413,7 @@ td {
   padding: 13px 20px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 1rem;
+  width: 100%;
 }
 .btn-calculate {
   margin-top: 34px;
@@ -786,13 +787,6 @@ hr {
   th {
     padding: 1rem 1.25rem;
   }
-
-  /* hhhhhhhhhhhhhhhhh */
-  .bmi-input {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  /* hjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
   .meet-our-team {
     margin: 4rem 0;
   }
